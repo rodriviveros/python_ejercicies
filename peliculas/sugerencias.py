@@ -10,8 +10,12 @@ def encabezado():
 #Mostrar Perfil de usuario del argumento que se le pasa al procedimiento.
 def perfil_usuario(usuario):
     print("Perfil de "+usuario["nombre"])
-    print("Género favorito "+usuario["genero_fav"])
-    print("Películas Sugeridas ", usuario["vistas"])
+    print("Género favorito: "+usuario["genero_fav"])
+    print("Películas Sugeridas:", usuario["vistas"])
+    with open("info_usuario.txt", "w") as archivo:
+        archivo.write(usuario["nombre"]+"\n")
+        archivo.write(usuario["genero_fav"]+"\n")
+        archivo.write(str(usuario["vistas"]))
 
 #Funcion para sacar tildes
 def sacar_tildes(texto):
