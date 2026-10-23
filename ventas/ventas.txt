@@ -1,0 +1,6 @@
+Pino	30000.0	16/09	miaytuya_sa 
+Eucalipto	100000.0	16/09	luisgomez_sa 
+Eucalipto	$100000.0	16/10	Persiahnos 
+Paraiso	$150000.0	16/10	Miguel 
+Pino	$57000	16/10	Juan_Gonzales	envio a domicilio	Sarmiento 4520 
+Pino	$57000	10/03	Pablo_Reynoso	envío a domicilio	San Luis 4789

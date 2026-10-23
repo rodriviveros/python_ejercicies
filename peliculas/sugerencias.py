@@ -12,10 +12,14 @@ def perfil_usuario(usuario):
     print("Perfil de "+usuario["nombre"])
     print("Género favorito: "+usuario["genero_fav"])
     print("Películas Sugeridas:", usuario["vistas"])
-    with open("info_usuario.txt", "w") as archivo:
+    with open("info_usuario.txt", "w", encoding="utf-8") as archivo:
         archivo.write(usuario["nombre"]+"\n")
         archivo.write(usuario["genero_fav"]+"\n")
-        archivo.write(str(usuario["vistas"]))
+        archivo.write("\n")
+        archivo.write("Listado de películas sugeridas:")
+        archivo.write("\n")
+        for pelicula in usuario["vistas"]:
+            archivo.write(pelicula+"\t")
 
 #Funcion para sacar tildes
 def sacar_tildes(texto):
